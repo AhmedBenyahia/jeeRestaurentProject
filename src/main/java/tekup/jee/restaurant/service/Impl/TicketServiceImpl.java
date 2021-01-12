@@ -55,6 +55,11 @@ public class TicketServiceImpl implements TicketService {
 
 	@Override
 	public Ticket saveOrUpdate(Ticket ticket) {
+		ticket.setAddition((double) 0);
+		if (ticket.getNumeroTicket() != null) {
+			Ticket ticketOld = getTicketById(ticket.getNumeroTicket());
+			ticket.getMets().addAll(ticketOld.getMets());
+		}
 		return ticketRepository.save(ticket);
 	}
 

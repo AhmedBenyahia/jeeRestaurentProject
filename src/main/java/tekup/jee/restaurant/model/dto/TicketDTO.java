@@ -20,14 +20,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Range;
-import tekup.jee.restaurant.model.Met;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class TicketDTO {
 
-	@Null
 	private Long numeroTicket;
 
 	@Future

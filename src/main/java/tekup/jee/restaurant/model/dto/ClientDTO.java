@@ -20,7 +20,6 @@ import tekup.jee.restaurant.model.Ticket;
 @AllArgsConstructor
 public class ClientDTO {
 
-	@Null
 	private Long idClient;
 
 	@NotBlank(message = "nom must not Empty")

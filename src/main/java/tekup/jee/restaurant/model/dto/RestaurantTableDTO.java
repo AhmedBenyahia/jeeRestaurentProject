@@ -14,7 +14,6 @@ import org.hibernate.validator.constraints.Range;
 @AllArgsConstructor
 public class RestaurantTableDTO {
 
-	@Null
 	private Long numeroTable;
 
 	@Range(max = 12, min = 2)
